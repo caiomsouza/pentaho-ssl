@@ -17,7 +17,7 @@ keytool -list -keystore .keystore
 
 # Execute the following command in the directory where the keystore file is located to export the certificate:
 ```
-keytool -export -alias pentaho -file pentaho.cer -storepass pentaho -keypass pentaho -keystore .keystore
+keytool -export -alias pentaho -file pentaho.cer -storepass YOUR_PASSWORD -keypass YOUR_PASSWORD -keystore .keystore
 ```
 
 # Browse to \biserver-ee\tomcat\conf\ & uncomment the "SSL HTTP/1.1 Connector" entry in server.xml and tweak as necessary:
