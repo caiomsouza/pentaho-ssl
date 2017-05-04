@@ -41,7 +41,7 @@ TO: <BR>
 ```
 <Connector port="8443" protocol="HTTP/1.1" SSLEnabled="true"
 maxThreads="150" scheme="https" 
-keystoreFile="/app/.keystore" keystorePass="changeit" 
+keystoreFile="/home/pentaho/.keystore" keystorePass="YOUR_PASSWORD" 
 secure="true" connectionTimeout="240000" 
 clientAuth="false" sslProtocol="TLS" />
 <!-- Define an AJP 1.3 Connector on port 8023 -->
@@ -92,8 +92,13 @@ redirectPort="8443" />
 https://<IP_ADDRESS_OF_PENTAHO_SERVER>:8443
 
 
-# Test 
-```
-curl -k https://localhost:8443
-```
+# Test / Commands 
 
+Curl with SSL <BR>
+```
+$ curl -k https://localhost:8443
+```
+Curl without SSL <BR>
+```
+$ curl -k http://localhost:8080
+```
