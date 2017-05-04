@@ -1,5 +1,6 @@
-# pentaho-ssl
-Pentaho SSL
+# Pentaho SSL
+
+Env: Pentaho Server EE 7<BR>
 
 # Config
 
